@@ -1,5 +1,6 @@
 package com.brewble.amaze
 
+import android.opengl.GLES30
 import android.opengl.GLSurfaceView
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
@@ -19,5 +20,7 @@ class MyGLRenderer : GLSurfaceView.Renderer{
 
     override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        GLES30.glClearColor(0.0f, 0.0f,0.0f,0.0f)
+
     }
 }

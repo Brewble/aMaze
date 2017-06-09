@@ -7,10 +7,13 @@ import android.view.SurfaceView
 
 class MainActivity : AppCompatActivity(){
 
+    lateinit var mGLView : GLSurfaceView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
+        mGLView = MyGLSurfaceView(this)
+        setContentView(mGLView)
 
 
     }
